@@ -1,10 +1,8 @@
+import vMypage from '../components/vMypage.vue'
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+    component: vMypage
   },
 
   // Always leave this as last one,
